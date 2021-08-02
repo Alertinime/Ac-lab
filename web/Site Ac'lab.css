@@ -37,9 +37,17 @@ body {
 }
 
 .news {
-  padding: 2%;
+  padding: 5%;
 }
 
+.tuile_news {
+}
+
+.intro_asso {
+}
+
+.intro_bureau {
+}
 /* footer */
 footer {
   color: white;
