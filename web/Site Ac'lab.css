@@ -71,7 +71,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
+.vide {
+  background-color: #4b7c87;
+}
 .border_service {
   border: 1px;
   border-radius: 5%;
