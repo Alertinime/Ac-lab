@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+/* news */
 .news {
   margin-left: auto;
   margin-right: auto;
@@ -61,7 +61,7 @@ body {
   border-radius: 5%;
   padding: 2.5%;
 }
-
+/* services */
 .services {
   grid-column: 3;
   border: 1px solid;
@@ -72,7 +72,7 @@ body {
   justify-content: space-between;
 }
 .vide {
-  background-color: #4b7c87;
+  background-color: blue;
 }
 .border_service {
   border: 1px;
