@@ -85,9 +85,13 @@ body {
   margin: 2% auto;
 }
 /* services */
-.services {
-  grid-column: 3;
+
+.out_services {
   border: 1px solid;
+  text-align: center;
+  padding-top: 2%;
+}
+.services {
   margin: 0% 5%;
   padding: 1%;
   display: flex;
@@ -113,6 +117,7 @@ body {
   background-color: rgb(250, 240, 221);
   hyphens: auto;
 }
+
 /* footer */
 footer {
   width: 100%;
@@ -123,6 +128,7 @@ footer {
   text-align: center;
   background-color: #4b7c87;
 }
+
 .padding_footer {
   display: flex;
   flex-direction: row;
