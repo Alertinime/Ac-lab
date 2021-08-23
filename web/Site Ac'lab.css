@@ -1,15 +1,33 @@
+@font-face {
+  font-family: RockFordSans;
+  src: url(RockfordSans-Light.otf);
+}
+
 /* header */
 header {
-  background-color: #4b7c87;
+  font-family: RockFordSans;
+  background-color: #008891;
   margin: 0%;
+}
+
+.navigation {
+  margin-top: 1.25%;
+  width: 60%;
+}
+
+.placement_nav {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+  justify-content: space-evenly;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 27%;
-  padding-top: 2%;
+  padding-left: 5%;
+  padding-top: 1%;
 }
 
 .logo_nav {
@@ -29,27 +47,15 @@ header {
 /* body */
 
 body {
+  font-family: RockFordSans;
+  background-color: #d9e8e9;
   margin: 0%;
 }
 
 .main {
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-}
-.navigation {
-  grid-column: 1;
-  padding-left: 15%;
-  width: 60%;
-  border-right: 1px solid;
 }
 
-.placement_nav {
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  justify-content: space-evenly;
-}
 /* news */
 .news {
   height: 35%;
@@ -75,7 +81,7 @@ body {
 }
 
 .titre_news {
-  background-color: rgb(216, 216, 216);
+  background-color: #008891;
   border: 1px;
   border-radius: 5%;
   padding: 2.5%;
@@ -87,11 +93,14 @@ body {
 /* services */
 
 .out_services {
+  background-color: #008891;
   border: 1px solid;
   text-align: center;
   padding-top: 2%;
+  margin: auto 2%;
 }
 .services {
+  background-color: #008891;
   margin: 0% 5%;
   padding: 1%;
   display: flex;
@@ -108,25 +117,28 @@ body {
 }
 
 .titre_service {
-  background-color: rgb(216, 216, 216);
+  background-color: #e9896a;
   padding: 5%;
 }
 
 .contenu_service {
+  border-top: 1px solid;
+  border-color: #b3b5b5;
   padding: 5%;
-  background-color: rgb(250, 240, 221);
+  background-color: #d9e8e9;
   hyphens: auto;
 }
 
 /* footer */
 footer {
+  margin-top: 10%;
   width: 100%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   text-align: center;
-  background-color: #4b7c87;
+  background-color: #008891;
 }
 
 .padding_footer {
