@@ -79,15 +79,15 @@ body {
 .tuile_news {
   margin: 25% auto;
   border: 1px;
-  border-top-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-top-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
 }
 
 .titre_news {
   background-color: #008891;
   border: 1px;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   padding: 2.5%;
   font-size: 115%;
 }
@@ -98,7 +98,7 @@ body {
 
 .twitter-timeline {
   border: 1px;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 /* services */
@@ -106,7 +106,7 @@ body {
 .out_services {
   background-color: #008891;
   border: 1px solid;
-  border-radius: 1em;
+  border-radius: 0.5em;
   text-align: center;
   font-size: 200%;
   padding-top: 2%;
@@ -133,15 +133,15 @@ body {
   font-size: 135%;
   background-color: #e9896a;
   padding: 5%;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
 
 .contenu_service {
   border-top: 1px solid;
   border-color: #b3b5b5;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   padding: 5%;
   background-color: #d9e8e9;
   hyphens: auto;
@@ -158,13 +158,12 @@ body {
   justify-self: center;
   width: 70%;
   border: 1px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   background-color: #e9896a;
 }
 
 /* footer */
 footer {
-  margin-top: 10%;
   width: 100%;
   color: white;
   display: flex;
