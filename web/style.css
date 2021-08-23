@@ -58,12 +58,6 @@ body {
   height: 100vh;
 }
 /* Carrousel */
-html, body, main {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 #carousel {
   position: relative;
@@ -102,7 +96,7 @@ html, body, main {
 #carousel div.prev {
   z-index: 5;
   left: 30%;
-  transform:  translateY(-10%) translateX(-50%) ;
+  transform:   translateX(-50%) scale(0.85);
 }
 #carousel div.prev img {
   width: 800px;
@@ -111,7 +105,7 @@ html, body, main {
 #carousel div.prevLeftSecond {
   z-index: 4;
   left: 15%;
-  transform:  translateY(-20%) translateX(-50%)  ;
+  transform:  translateX(-50%) scale(0.70) ;
   opacity: 0.7;
 }
 #carousel div.prevLeftSecond img {
@@ -125,7 +119,7 @@ html, body, main {
 #carousel div.next {
   z-index: 5;
   left: 70%;
-  transform:  translateY(-10%) translateX(-50%) ;
+  transform:  translateX(-50%) scale(0.85);
 }
 #carousel div.next img {
   width: 800px;
@@ -133,7 +127,7 @@ html, body, main {
 #carousel div.nextRightSecond {
   z-index: 4;
   left: 85%;
-  transform:  translateY(-20%) translateX(-50%) ;
+  transform: translateX(-50%) scale(0.70);
   opacity: 0.7;
 }
 #carousel div.nextRightSecond img {
