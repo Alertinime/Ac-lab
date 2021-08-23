@@ -11,8 +11,10 @@ header {
 }
 
 .navigation {
-  margin-top: 1.25%;
+  margin-top: 0.9%;
   width: 60%;
+  font-size: 125%;
+  text-decoration: underline;
 }
 
 .placement_nav {
@@ -165,29 +167,41 @@ html, body, main {
 .tuile_news {
   margin: 25% auto;
   border: 1px;
-  border-radius: 5%;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 .titre_news {
   background-color: #008891;
   border: 1px;
-  border-radius: 5%;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   padding: 2.5%;
+  font-size: 115%;
 }
 
 .social_feed {
   margin: 2% auto;
 }
+
+.twitter-timeline {
+  border: 1px;
+  border-radius: 1em;
+}
+
 /* services */
 
 .out_services {
   background-color: #008891;
   border: 1px solid;
+  border-radius: 1em;
   text-align: center;
+  font-size: 200%;
   padding-top: 2%;
   margin: auto 2%;
 }
 .services {
+  font-size: 50%;
   background-color: #008891;
   margin: 0% 5%;
   padding: 1%;
@@ -199,22 +213,41 @@ html, body, main {
 .border_service {
   padding: 2.5%;
   border: 1px;
-  border-radius: 5%;
   min-width: 20%;
   max-width: 25%;
 }
 
 .titre_service {
+  font-size: 135%;
   background-color: #e9896a;
   padding: 5%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .contenu_service {
   border-top: 1px solid;
   border-color: #b3b5b5;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   padding: 5%;
   background-color: #d9e8e9;
   hyphens: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.acces_page_service {
+  font-family: RockFordSans;
+  padding: 3%;
+  margin-top: 5%;
+  font-size: 125%;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  border: 1px;
+  border-radius: 1em;
+  background-color: #e9896a;
 }
 
 /* footer */
