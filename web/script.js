@@ -42,10 +42,6 @@ function moveToSelected(element) {
       e.preventDefault();
   });
   
-  $('#carousel div').click(function() {
-    moveToSelected($(this));
-  });
-  
   $('#prev').click(function() {
     moveToSelected('prev');
   });
