@@ -3,24 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="Site Ac'lab.css" />
-    <link href="RockfordSans-Light.otf" rel="stylesheet" />
+    <link href="ressources\RockfordSans-Light.otf" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <title>Site Ac'lab</title>
   </head>
+  <body>
                                           <!---Header-->
     <header>                       
-      <div class="nav">                 
+      <div class="nav">
+        <a href="Site Ac'lab.html">                 
         <img
           class="logo_nav"
-          src="logo_aclab.png"
+          src="ressources/logo_aclab.png"
           alt="logo_aclab"
           height="50px"
         />
+        </a>
         <!--Navigation set bons liens-->
         <div class="navigation">
           <section class="placement_nav">
             <a class="white" href="news.html">News</a>
-            <a class="white" href="news.html">Introduction</a>
-            <a class="white" href="news.html">Support</a>
+            <a class="white" href="introduction.html">Introduction</a>
+            <a class="white" href="services.html">Support</a>
             <a class="white" href="news.html">Services</a>
           </section>
         </div>
@@ -29,21 +33,21 @@
                                         <!--Discord-->
           <img
             class="logo_discord"
-            src="logo_discord.png"
+            src="ressources/logo_discord.png"
             alt="logo_dc"
             height="25px"
           />
                                         <!--Facebook-->
           <img
             class="logo_facebook"
-            src="logo_facebook.png"
+            src="ressources/logo_facebook.png"
             alt="logo_fb"
             height="25px"
           />
                                         <!--Instagram-->
           <img
             class="logo_instagram"
-            src="logo_insta.png"
+            src="ressources/logo_insta.png"
             alt="logo_ig"
             height="25px"
           />
@@ -51,7 +55,36 @@
       </div>
     </header>
     <div class="main">
-      
+                                        <!-- Caroussel-->
+      <div id="carousel">
+         <div class="hideLeft">
+          <img src="ressources/pp.jpg">
+        </div>
+        <div class="prevLeftSecond">
+          <img src="ressources/eyes.png">
+        </div>
+        <div class="prev">
+          <img src="https://picsum.photos/300/200">
+        </div>
+        <div class="selected">
+          <img src="ressources/salut a tous c'est fanta.jpg">
+        </div>
+        <div class="next">
+          <img src="https://picsum.photos/200/300">
+        </div>
+        <div class="nextRightSecond">
+          <img src="https://picsum.photos/200/201">
+        </div>
+        <div class="hideRight">
+          <img src="https://picsum.photos/200">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+      </div>
+
           <!-- 'A faire' caroussel : 	temporaire : event d'actualité |  Perma :pub sweat / services-->
       <div class="center">
                                                 <!--Tuiles news-->
@@ -77,6 +110,7 @@
                                                   <!-- services -->
         <div class="out_services white">
           Services
+        </div>
         <div class="services black">
           <section class="border_service">
             <section class="titre_service white">
@@ -105,13 +139,13 @@
           </section>
         </div>
       </div>
-      </div>
       <!--Vide a droite (voir si on centre le main en fonction de la nav ou de la page)-->
-      </div>
+    </div>
                                          <!--Footer-->
-  <footer>
+    <footer>
     <a class="white padding_footer" href="mentions_legales.html"> Mentions légales</a>
-</footer>
+    </footer>
+    <script src="script.js"></script>
   </body>
 
   
