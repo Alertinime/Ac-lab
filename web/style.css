@@ -288,6 +288,10 @@ footer {
   text-decoration: none;
 }
 
+.ecart{
+  height: 600px;
+}
+
 /* texte noir sans deco (meme linkable) */
 
 .black {
@@ -305,4 +309,74 @@ footer {
 .black:active {
   color: black;
   text-decoration: none;
+}
+
+@media screen and (max-width: 979px) {
+  #carousel{
+    height: 20%;
+    width: 80%;
+    left: 10%;
+    top: 20%;
+  }
+  #carousel div img {
+    width: 80%;
+  }
+  #carousel div.hideLeft img {
+    width: 80%;
+  }
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  #carousel div.hideRight img {
+    width: 800px;
+  }
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateX(-50%) scale(0.85);
+  }
+  #carousel div.prev img {
+    width: 800px;
+  }
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.7;
+  }
+  #carousel div.prevLeftSecond img {
+    width: 800px;
+  }
+  #carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+  #carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateX(-50%) scale(0.85);
+  }
+  #carousel div.next img {
+    width: 800px;
+  }
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.7;
+  }
+  #carousel div.nextRightSecond img {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
 }
