@@ -1,3 +1,12 @@
+loadRequest = new XMLHttpRequest;
+
+loadRequest.onload = function(){
+  console.log("hello");
+}
+
+loadRequest.open("GET", "test.txt");
+loadRequest.send();
+
 function moveToSelected(element) {
 
     if (element == "next") {
