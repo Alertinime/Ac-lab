@@ -55,49 +55,45 @@
       </div>
     </header>
     <div class="main">
-                                        <!-- Caroussel-->
-      <div id="carousel">
-         <div class="hideLeft">
-           <a href="pp.html">
-          <img src="ressources/pp.jpg"width="800px"  height="300px">
-        </a>
+       <!-- Caroussel-->
+       <div id="carousel">
+         <!---->
+        <button id="prev" class="carousel__button carousel__button--left">
+          <img src="./images/carousel-arrow-left.svg" alt="">
+        </button>
+         <div class="hideLeft"> 
+          <img src="ressources/pp.jpg"width="800px"  height="300px"> 
+         </div> 
+        <div class="prevLeftSecond"> 
+          <img src="ressources/eyes.png"width="800px"  height="300px"> 
+        </div> 
+        <div class="prev"> 
+          <img src="https://picsum.photos/1000/800" width="800px"  height="300px"> 
+        </div> 
+        <div class="selected"> 
+          <img src="ressources/salut a tous c'est fanta.jpg"width="800px"  height="300px"> 
+        </div> 
+        <div class="next"> 
+          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
+        </div> 
+        <div class="nextRightSecond"> 
+          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
+        </div> 
+        <div class="hideRight"> 
+          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
         </div>
-        <div class="prevLeftSecond">
-          <a href="eyes.html">
-          <img src="ressources/eyes.png"width="800px"  height="300px" >
-        </a>
-        </div>
-        <div class="prev">
-          <a href="bite.html">
-          <img src="https://picsum.photos/1000/800" width="800px"  height="300px" >
-        </a>
-        </div>
-        <div class="selected">
-          <a href="fanta.html">
-          <img src="ressources/salut a tous c'est fanta.jpg"width="800px"  height="300px" >
-        </a>
-        </div>
-        <div class="next">
-          <a href="chatte.html">
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px" >
-        </a>
-        </div>
-        <div class="nextRightSecond">
-          <a href="couilles.html">
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px" >
-        </a>
-        </div>
-        <div class="hideRight">
-          <a href="cdd.html">
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px" >
-        </a>
-        </div>
+        <button id="next" class="carousel__button carousel__button--right">
+          <img src="./images/carousel-arrow-right.svg" alt="">
+        </button>
+        
       </div>
-
-      <div class="buttons">
-        <button id="prev">Prev</button>
-        <button id="next">Next</button>
-      </div>
+      <div id="carouselNav" class="carousel__nav">
+          <button class="carousel__indicator current-slide"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+          <button class="carousel__indicator"></button>
+        </div>
 
           <!-- 'A faire' caroussel : 	temporaire : event d'actualité |  Perma :pub sweat / services-->
       <div class="center">
@@ -127,10 +123,10 @@
         </div>
         <div class="services black">
           <section class="border_service">
-            <section class="titre_service white">
+            <section class="titre_service white ">
               Titre service 1
               </section>
-            <section class="contenu_service">
+            <section class="contenu_service ">
               Contenu service 1
               <button class="acces_page_service">
                 <a class="white" href="news.html">Plus d'informations</a>
@@ -173,4 +169,4 @@
 
   
 </html>
-<!-- Martin bonne chance pour relire <3 -->
+
