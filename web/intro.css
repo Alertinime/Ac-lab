@@ -1,0 +1,173 @@
+.placement_tuiles {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+@font-face {
+  font-family: RockFordSans;
+  src: url(ressources/RockfordSans-Light.otf);
+}
+
+/* header */
+header {
+  font-family: RockFordSans;
+  background-color: #008891;
+  margin: 0%;
+}
+
+.navigation {
+  margin-top: 0.9%;
+  width: 60%;
+  font-size: 125%;
+  text-decoration: underline;
+}
+
+.placement_nav {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+  justify-content: space-evenly;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.logo_nav {
+  margin-bottom: 2%;
+}
+.social_medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 15%;
+  padding-top: 1%;
+}
+.logo_facebook {
+  border-radius: 15%;
+}
+
+/* body */
+
+body {
+  font-family: RockFordSans;
+  background-color: #d9e8e9;
+  margin: 0%;
+}
+
+/* services */
+
+.box_3 {
+  font-size: 50%;
+  margin: 0% 22.5%;
+  padding: 1%;
+  border: 1px;
+  border-radius: 1em;
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.border_service {
+  padding: 5%;
+  border: 1px;
+  min-width: 25%;
+  max-width: 35%;
+}
+
+.titre_service {
+  font-size: 250%;
+  background-color: #e9896a;
+  padding: 5%;
+  text-align: center;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.ton_nom_trop_long {
+  font-size: 60%;
+}
+
+.img_profil {
+  border: 1px;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  max-width: 100%;
+  height: auto;
+}
+.acces_page_service {
+  font-family: RockFordSans;
+  padding: 3%;
+  margin-top: 5%;
+  font-size: 125%;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  border: 1px;
+  border-radius: 0.5em;
+  background-color: #e9896a;
+}
+/* footer */
+footer {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  background-color: #008891;
+}
+
+.padding_footer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+  margin-left: 5%;
+  white-space: nowrap;
+  padding: 0.5% 0;
+}
+
+.white {
+  color: white;
+  text-decoration: none;
+}
+.white:visited {
+  color: white;
+  text-decoration: none;
+}
+.white:link {
+  color: white;
+  text-decoration: none;
+}
+.white:active {
+  color: white;
+  text-decoration: none;
+}
+
+.ecart {
+  height: 600px;
+}
+
+/* texte noir sans deco (meme linkable) */
+
+.black {
+  color: black;
+  text-decoration: none;
+}
+.black:visited {
+  color: black;
+  text-decoration: none;
+}
+.black:link {
+  color: black;
+  text-decoration: none;
+}
+.black:active {
+  color: black;
+  text-decoration: none;
+}
