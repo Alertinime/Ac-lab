@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="ressources\RockfordSans-Light.otf" rel="stylesheet" />
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>    
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <title>Site Ac'lab</title>
   </head>
@@ -56,47 +58,18 @@
     </header>
     <div class="main">
                                           <!-- Caroussel-->
-      <button id="prev" class="carousel__button carousel__button--left">
-        <img src="ressources/gauche.png" alt="fleche gauche">
-      </button>
       <div id="carousel">
          <!---->
+        <ul class="list">
+          <li class="hide"></li>
+          <li class="prev"></li>
+          <li class="act"></li>
+          <li class="next"></li>
+          <li class="next new-next"></li>
+        </ul>
         
-        
-         <div class="hideLeft"> 
-          <img src="ressources/pp.jpg"width="800px"  height="300px"> 
-         </div> 
-        <div class="prevLeftSecond"> 
-          <img src="ressources/eyes.png"width="800px"  height="300px"> 
-        </div> 
-        <div class="prev"> 
-          <img src="https://picsum.photos/1000/800" width="800px"  height="300px"> 
-        </div> 
-        <div class="selected"> 
-          <img src="ressources/salut a tous c'est fanta.jpg"width="800px"  height="300px"> 
-        </div> 
-        <div class="next"> 
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
-        </div> 
-        <div class="nextRightSecond"> 
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
-        </div> 
-        <div class="hideRight"> 
-          <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
-        </div>
-        
+        <div class="swipe"></div>
       </div>
-      <button id="next" class="carousel__button carousel__button--right">
-          <img src="ressources/droite.png" alt="fleche droite">
-        </button>
-      <div id="carouselNav" class="carousel__nav">
-          <button class="carousel__indicator current-slide"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-          <button class="carousel__indicator"></button>
-        </div>
-
           <!-- 'A faire' caroussel : 	temporaire : event d'actualité |  Perma :pub sweat / services-->
       <div class="center">
                                                 <!--Tuiles news-->

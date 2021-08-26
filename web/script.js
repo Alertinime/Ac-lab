@@ -7,121 +7,117 @@ loadRequest.onload = function(){
 loadRequest.open("GET", "test.txt");
 loadRequest.send();
 
-function moveToSelected(element) {
+const $ = selector => {
+  return document.querySelector(selector);
+};
 
-    if (element == "next") {
-      var selected = $(".selected").next();
-    } else if (element == "prev") {
-      var selected = $(".selected").prev();
-    } else {
-      var selected = element;
-    }
-  
-    var next = $(selected).next();
-    var prev = $(selected).prev();
-    var prevSecond = $(prev).prev();
-    var nextSecond = $(next).next();
-  
-    $(selected).removeClass().addClass("selected");
-  
-    $(prev).removeClass().addClass("prev");
-    $(next).removeClass().addClass("next");
-  
-    $(nextSecond).removeClass().addClass("nextRightSecond");
-    $(prevSecond).removeClass().addClass("prevLeftSecond");
-  
-    $(nextSecond).nextAll().removeClass().addClass('hideRight');
-    $(prevSecond).prevAll().removeClass().addClass('hideLeft');
-  
+//1 (hide)
+var img_hide= document.createElement("img");
+img_hide.src = "https://picsum.photos/1920/1080";
+document.getElementsByClassName("hide")[0].appendChild(img_hide);
+//2 (prev)
+var img_prev = document.createElement("img");
+img_prev.src = "https://picsum.photos/1920/1080";
+document.getElementsByClassName("prev")[0].appendChild(img_prev);
+//3 (act)
+var img_act = document.createElement("img");
+img_act.src = "ressources/acs.jpg";
+document.getElementsByClassName("act")[0].appendChild(img_act);
+//4 (next)
+var img_next = document.createElement("img");
+img_next.src = "https://picsum.photos/1920/1080";
+document.getElementsByClassName("next")[0].appendChild(img_next);
+//5 (next new-next)
+var img_next_new = document.createElement("img");
+img_next_new.src = "https://picsum.photos/1920/1080";
+document.getElementsByClassName("next new-next")[0].appendChild(img_next_new);
+
+function next() {
+
+
+  if ($(".hide")) {
+    temp_img = document.getElementsByClassName("hide")[0].firstChild
+    $(".hide").remove(); 
   }
-  
-  // Eventos teclado
-  $(document).keydown(function(e) {
-      switch(e.which) {
-          case 37: // left
-          moveToSelected('prev');
-          break;
-  
-          case 39: // right
-          moveToSelected('next');
-          break;
-  
-          default: return;
-      }
-      e.preventDefault();
-  });
-  
-  $('#prev').click(function() {
-    moveToSelected('prev');
-  });
-  
-  $('#next').click(function() {
-    moveToSelected('next');
-  });
+
+  /* Step */
+
+  if ($(".prev")) {
+    $(".prev").classList.add("hide");
+
+    $(".prev").classList.remove("prev");
+  }
+
+  $(".act").classList.add("prev");
+
+  $(".act").classList.remove("act");
+
+  $(".next").classList.add("act");
+  $(".next").classList.remove("next");
+
+  /* New Next */
+
+  $(".new-next").classList.remove("new-next");
 
 
+  const addedEl = document.createElement('li');
 
+  $(".list").appendChild(addedEl);
+  addedEl.classList.add("next","new-next");
+  document.getElementsByClassName("next new-next")[0].appendChild(temp_img);
 
-
-
-  const track = document.getElementById('track'),
-  slides = Array.from(track.children),
-  nextSlideButton = document.getElementById('carouselNextSlideButton'),
-  previousSlideButton = document.getElementById('carouselPreviousSlideButton'),
-  carouselNav = document.getElementById('carouselNav'),
-  carouselNavDots = Array.from(carouselNav.children);
-window.addEventListener('resize', setSlideImagePosition)
-//  current slide is moved to the left when next button is clicked 
-function moveSlide(track, currentSlide, targetSlide) { 
-  track.style.transform = `translateX(-${targetSlide.style.left})`;
-  currentSlide.classList.remove('current-slide');
-  targetSlide.classList.add('current-slide');
 }
-nextSlideButton.addEventListener('click', function () { 
-  const currentSlide = track.querySelector('.current-slide');
-  const targetSlide = currentSlide.nextElementSibling;
-  const currentDot = carouselNav.querySelector('.current-slide');
-  const nextDot = currentDot.nextElementSibling;
-  if (targetSlide) {
-    moveSlide(track, currentSlide, targetSlide)
-    updateCarouselDots(currentDot, nextDot)
-  } else { 
-    const targetSlide = slides[0];
-    const nextDot = carouselNavDots[0]
-    moveSlide(track, currentSlide, targetSlide)
-    updateCarouselDots(currentDot, nextDot)
+
+function prev() {
+  temp_img2 = document.getElementsByClassName("new-next")[0].firstChild
+  $(".new-next").remove();
+    
+  /* Step */
+
+  $(".next").classList.add("new-next");
+
+  $(".act").classList.add("next");
+  $(".act").classList.remove("act");
+
+  $(".prev").classList.add("act");
+  $(".prev").classList.remove("prev");
+
+  /* New Prev */
+
+  $(".hide").classList.add("prev");
+  $(".hide").classList.remove("hide");
+
+  const addedEl = document.createElement('li');
+
+  $(".list").insertBefore(addedEl, $(".list").firstChild);
+  addedEl.classList.add("hide");
+  document.getElementsByClassName("hide")[0].appendChild(temp_img2);
+}
+
+slide = element => {
+  /* Next slide */
+  
+  if (element.classList.contains('next')) {
+    next();
+    
+  /* Previous slide */
+    
+  } else if (element.classList.contains('prev')) {
+    prev();
   }
-})
-previousSlideButton.addEventListener('click', function () { 
-  const currentSlide = track.querySelector('.current-slide');
-  const targetSlide = currentSlide.previousElementSibling;
-  const currentDot = carouselNav.querySelector('.current-slide');
-  const nextDot = currentDot.previousElementSibling;
-  if (targetSlide) {
-    moveSlide(track, currentSlide, targetSlide)
-    updateCarouselDots(currentDot, nextDot)
-  } else { 
-    const targetSlide = slides[slides.length - 1];
-    const nextDot = carouselNavDots[carouselNavDots.length - 1]
-    moveSlide(track, currentSlide, targetSlide)
-    updateCarouselDots(currentDot, nextDot)
-  }
-})
-carouselNav.addEventListener('click', function (event) { 
-  targetDot = event.target.closest('button');
-  console.log(targetDot)
-  if (!targetDot) { 
-    return
-  }
-  const currentSlide = track.querySelector('.current-slide'),
-        currentDot = carouselNav.querySelector('.current-slide'),
-        targetIndex = carouselNavDots.findIndex(dot => dot === targetDot),
-        targetSlide = slides[targetIndex];
-  moveSlide(track, currentSlide, targetSlide);
-  updateCarouselDots(currentDot, targetDot);
-})
-function updateCarouselDots(currentDot, targetDot) { 
-  currentDot.classList.remove('current-slide');
-  targetDot.classList.add('current-slide');
-} 
-slides.forEach(setSlideImagePosition)
+}
+
+const slider = $(".list"),
+      swipe = new Hammer($(".swipe"));
+
+slider.onclick = event => {
+  slide(event.target);
+}
+
+swipe.on("swipeleft", (ev) => {
+  next();
+});
+
+swipe.on("swiperight", (ev) => {
+  prev();
+});
