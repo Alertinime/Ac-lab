@@ -55,12 +55,14 @@
       </div>
     </header>
     <div class="main">
-       <!-- Caroussel-->
-       <div id="carousel">
+                                          <!-- Caroussel-->
+      <button id="prev" class="carousel__button carousel__button--left">
+        <img src="ressources/gauche.png" alt="fleche gauche">
+      </button>
+      <div id="carousel">
          <!---->
-        <button id="prev" class="carousel__button carousel__button--left">
-          <img src="./images/carousel-arrow-left.svg" alt="">
-        </button>
+        
+        
          <div class="hideLeft"> 
           <img src="ressources/pp.jpg"width="800px"  height="300px"> 
          </div> 
@@ -82,11 +84,11 @@
         <div class="hideRight"> 
           <img src="https://picsum.photos/1000/800"width="800px"  height="300px"> 
         </div>
-        <button id="next" class="carousel__button carousel__button--right">
-          <img src="./images/carousel-arrow-right.svg" alt="">
-        </button>
         
       </div>
+      <button id="next" class="carousel__button carousel__button--right">
+          <img src="ressources/droite.png" alt="fleche droite">
+        </button>
       <div id="carouselNav" class="carousel__nav">
           <button class="carousel__indicator current-slide"></button>
           <button class="carousel__indicator"></button>
