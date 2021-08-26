@@ -165,7 +165,6 @@ body {
   top: 0;
   width: 100%;
 }
-3. The necessary CSS styles for the carousel controls.
 
 .carousel__button {
   cursor: pointer;
