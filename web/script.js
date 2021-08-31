@@ -53,6 +53,7 @@ function next() {
   $(".act").classList.remove("act");
 
   $(".next").classList.add("act");
+  
   $(".next").classList.remove("next");
 
   /* New Next */
@@ -109,6 +110,7 @@ slide = element => {
 
 const slider = $(".list"),
       swipe = new Hammer($(".swipe"));
+      
 
 slider.onclick = event => {
   slide(event.target);

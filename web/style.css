@@ -59,12 +59,31 @@ body {
 }
 /* Carrousel */
 #carousel{
-
   height: 30%;
+}
+.right-button{
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  margin-top: -15%;
+}
+.left-button{
+  position: absolute;
+  width: 20%;
+  height: 35%;
+  left: 80%;
+  margin-top: -15%;
+}
+button img{
+  max-width: 100%;
 }
 .list img{
   max-width: 100%;
   max-height: 100%;
+
+}
+.list li img{
+  z-index: 0;
 }
 .list {
   height: 100%;
@@ -76,13 +95,13 @@ body {
 
 .list li {
   list-style-type: none;
-  
-  width: 200px;
-  height: 200px;
+  z-index: 1;
+  width: 40%;
+  height: 90%;
   opacity: .25;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -20%;
   border-radius: 2px;
   background: #9C89B8;
   transition: transform 1s, opacity 1s;
@@ -120,8 +139,8 @@ body {
 }
 
 .swipe {
-  width: 270px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
   position: absolute;
   background-color: green;
   border-radius: 2px;
