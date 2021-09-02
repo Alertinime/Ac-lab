@@ -89,10 +89,6 @@ body {
   border-bottom-right-radius: 0.5em;
 }
 
-.ton_nom_trop_long {
-  font-size: 60%;
-}
-
 .img_profil {
   border: 1px;
   border-top-left-radius: 2em;
