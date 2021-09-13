@@ -8,6 +8,7 @@ header {
   font-family: RockFordSans;
   background-color: #d9e8e9;
   margin: 0%;
+  border-bottom: 1px dimgray;
 }
 
 .navigation {
@@ -342,6 +343,26 @@ footer {
 }
 .black:active {
   color: black;
+  text-decoration: none;
+}
+
+.grey {
+  color:dimgray;
+  text-decoration: none;
+}
+
+.grey:visited {
+  color:dimgray;
+  text-decoration: none;
+}
+
+.grey:link {
+  color:dimgray;
+  text-decoration: none;
+}
+
+.grey:active {
+  color:dimgray;
   text-decoration: none;
 }
 /*
